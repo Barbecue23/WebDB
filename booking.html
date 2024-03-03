@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>จองสนามฟุตบอล</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/booking.css">
+</head>
+<body>
+	<header>
+		<h1>เช่าสนามฟุตบอล</h1>
+        <nav>
+			<ul>
+				<li><a href="Home.html">หน้าแรก</a></li>
+				<li><a href="services.html">เกี่ยวกับเรา</a></li>
+				<li><a href="ContactUs.html">ติดต่อเรา</a></li>
+				<li><a href="logout.php">ออกจากระบบ</a></li>
+                
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+
+		<h2>สนามทั้งหมด</h2><br>
+		<iframe src="show_data.php"></iframe>
+		
+
+		<section>
+			
+			<h2>จองสนาม</h2>
+			<br>
+			<form action="booking.php" method="POST">
+				<span>
+				
+				<label for="field_id">field_id</label>
+				<select id="field_id" name="field_id">
+					<option value="1">1</option required>
+					<option value="2">2</option required>
+					<option value="3">3</option required>
+					<option value="4">4</option required>
+					<option value="5">5</option required>
+					<option value="6">6</option required>
+				</select>
+
+
+				<label for="size">size:</label>
+				<select id="size" name="size">
+					<option value="5v5">5v5</option required>
+					<option value="7v7">7v7</option required>
+					<option value="11v11">11v11</option required>
+				</select>
+
+				<label for="start_time">เริ่มเวลา:</label>
+				<input type="time" id="start_time" name="start_time" required>
+
+				<label for="end_time">ถึงเวลา:</label>
+				<input type="date" id="end_time" name="end_time" required>
+			<span>
+				<input type="submit" value="จอง">
+			
+			</form>
+		</section>
+	</main>
+</body>
+</html>

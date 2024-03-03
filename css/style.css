@@ -1,0 +1,189 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+  
+  #intro {
+    background-image: url('intro.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #intro p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  #intro a {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  #intro a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #slider {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .slider-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slider-container button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .slider-container button:hover {
+    background-color: #333;
+    color: #fff; 
+  }
+  
+
+  #services {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #services ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #services li {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #registration {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  #registration h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #registration form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #registration label {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #registration input[type="text"], #registration input[type="email"], #registration input[type="tel"], #registration input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #registration input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+  }
+  
+  #registration input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+}

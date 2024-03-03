@@ -1,0 +1,84 @@
+/* ส่วนหัวของหน้าเว็บ */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* ตารางแสดงข้อมูล */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+
+tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+/* ปุ่มสำหรับการจอง */
+form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+form input[type=submit]:hover {
+  background-color: #45a049;
+}

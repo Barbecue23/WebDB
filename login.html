@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <header>
+    <h1>เช่าสนามฟุตบอล</h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html">หน้าแรก</a></li>
+        <li><a href="services.html">เกี่ยวกับเรา</a></li>
+        <li><a href="ContactUs.html">ติดต่อเรา</a></li>
+        <li><a href="login.html">เข้าสู่ระบบ</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <form action="login_check.php" method="POST">
+      <h2>Login Form</h2>
+      
+      <div class="form-group">
+        <label for="user_Name">Username:</label>
+        <input type="text" id="user_Name" name="user_Name" required placeholder="username">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="password">
+        <?php
+        if(isset($_SESSION["Error"])){
+          echo $_SESSION["Error"];
+        }
+        ?>
+      </div>
+      <input type="submit" value="Login">
+      <br>
+      <a href="registration.html"><input type="button" value="Registration"></a>
+      
+    </form>
+  </div>
+</body>
+
+</html>

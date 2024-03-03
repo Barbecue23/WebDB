@@ -1,0 +1,109 @@
+/* เพิ่มสีพื้นหลังและสีตัวอักษรของส่วนหัวของเว็บไซต์ */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* เพิ่มขนาดตัวอักษรและช่องว่างระหว่างเมนู */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #111;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-left: 20px;
+  }
+  
+  nav li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+  }
+
+  /* ตารางแสดงข้อมูล */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    
+    border-bottom: 1px solid #ddd; /* เพิ่มเส้นขอบด้านล่าง */
+  }
+  
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; /* เพิ่มเส้นขอบด้านขวา */
+  }
+  
+  th:last-child, td:last-child {
+    border-right: none; /* ไม่มีเส้นขอบด้านขวาในคอลัมน์สุดท้าย */
+  }
+  
+  
+  tr:nth-child(even) {
+    background-color: #f7f7f7; /* เปลี่ยนเป็นสีเทาเข้มให้สวยงาม */
+  }
+  
+ div #comment-section {
+    height: 200px;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+  
